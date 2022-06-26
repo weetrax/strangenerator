@@ -37,7 +37,7 @@ const NFTInfo: React.FC<NFTInfoProps> = ({ nft }) => {
           </a>
         </p>
         <p className="mb-3">
-          <span className="leading-5 block font-bold text-3xl text-yellow-600">
+          <span className="block font-bold text-3xl text-yellow-600">
             Blockchain
           </span>
           <a
@@ -50,7 +50,7 @@ const NFTInfo: React.FC<NFTInfoProps> = ({ nft }) => {
           </a>
         </p>
         <p className="mb-3">
-          <span className="leading-5 block font-bold text-3xl text-yellow-600">
+          <span className="block font-bold text-3xl text-yellow-600">
             Collection
           </span>
           <span className="text-lg font-bold">{nft.collection}</span>
