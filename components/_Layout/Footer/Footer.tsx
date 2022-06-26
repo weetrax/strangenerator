@@ -1,7 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import Container from "../Container";
-import Elrond from "../SVGIcons/Elrond";
+import SVGElrond from "../SVGIcons/SVGElrond";
 
 type FooterProps = {
   //
@@ -69,7 +69,7 @@ const Footer: React.FC<FooterProps> = () => {
           </li>
           <li>
             <span className="w-5 h-5">
-              <Elrond />
+              <SVGElrond />
             </span>{" "}
             Tips: erd1l9gr2fn7qy86q26xqj4wmner5evkz8q277nerckd8xy5502klzjs5mxcfr
           </li>

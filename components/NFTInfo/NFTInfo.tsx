@@ -12,7 +12,6 @@ const NFTInfo: React.FC<NFTInfoProps> = ({ nft }) => {
       <div className="col-span-6 flex items-center">
         <img
           className="rounded"
-          //src="/assets/img/me.png"
           src={nft.url}
           style={{ maxHeight: "350px" }}
         ></img>
