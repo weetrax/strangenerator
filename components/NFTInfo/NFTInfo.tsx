@@ -9,14 +9,10 @@ type NFTInfoProps = {
 const NFTInfo: React.FC<NFTInfoProps> = ({ nft }) => {
   return (
     <div className="grid grid-cols-12 gap-2 justify-center h-full p-2 items-center">
-      <div className="col-span-6 flex items-center">
-        <img
-          className="rounded"
-          src={nft.url}
-          style={{ maxHeight: "350px" }}
-        ></img>
+      <div className="col-span-12 md:col-span-6 flex items-center">
+        <img className="rounded md:max-h-80" src={nft.url}></img>
       </div>
-      <div className="col-span-6">
+      <div className="col-span-12 md:col-span-6 text-center md:text-left">
         <p className="mb-3">
           <span className="block font-bold text-3xl text-yellow-600">Name</span>
           <span className="text-lg font-bold">{nft.name}</span>

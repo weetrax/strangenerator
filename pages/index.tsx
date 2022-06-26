@@ -80,8 +80,10 @@ const Home: NextPage = () => {
                   </form>
                 </div>
               </div>
-              <div className="bg-yellow-400 rounded">
-                <NFTInfo nft={selectedApez} />
+              <div>
+                <Screenshot>
+                  <NFTInfo nft={selectedApez} />
+                </Screenshot>
               </div>
             </div>
           </div>
