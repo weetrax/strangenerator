@@ -36,7 +36,7 @@ const Footer: React.FC<FooterProps> = () => {
               href="https://explorer.elrond.com/accounts/erd1l9gr2fn7qy86q26xqj4wmner5evkz8q277nerckd8xy5502klzjs5mxcfr"
               target={"_blank"}
               rel="noreferrer"
-              className="pl-1 hover:text-yellow-400 duration-200 transition-colors ease-in-out"
+              className="pl-1 whitespace-nowrap text-ellipsis overflow-hidden hover:text-yellow-400 duration-200 transition-colors ease-in-out"
             >
               erd1l9gr2fn7qy86q26xqj4wmner5evkz8q277nerckd8xy5502klzjs5mxcfr
             </a>
