@@ -53,7 +53,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>DaApez - DaApezator</title>
-        <meta name="description" content="Generate DaApez badge info" />
+        <meta name="description" content="DaApez Badge Generator" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
