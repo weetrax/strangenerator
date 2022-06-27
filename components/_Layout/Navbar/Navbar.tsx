@@ -19,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = () => {
   return (
     <Disclosure
       as="nav"
-      className="bg-primary-500 backdrop-filter backdrop-blur bg-opacity-70 items-center sticky top-0 shadow-sm z-20"
+      className="bg-primary-600 backdrop-filter backdrop-blur bg-opacity-70 items-center sticky top-0 shadow-sm z-20"
     >
       {({ open }) => (
         <>

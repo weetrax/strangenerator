@@ -12,7 +12,17 @@ module.exports = {
       gray: colors.neutral,
       indigo: colors.indigo,
       red: colors.rose,
-      yellow: colors.amber,
+      yellow: {
+        100: "#ffe9d7",
+        200: "#ffd3af",
+        300: "#ffbc86",
+        400: "#ffa65e",
+        500: "#ff9036",
+        600: "#cc732b",
+        700: "#995620",
+        800: "#663a16",
+        900: "#331d0b",
+      },
       green: colors.green,
       //CUSTOM COLORS
       //https://www.tailwindshades.com/

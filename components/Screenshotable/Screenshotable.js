@@ -29,7 +29,7 @@ const Screenshot = ({ children }) => {
       <div className="text-right mb-4">
         <button
           onClick={downloadScreenshot}
-          className="px-2 py-1 rounded bg-yellow-400 text-white"
+          className="px-2 py-1 rounded bg-yellow-500 text-white"
         >
           Download as .png
         </button>

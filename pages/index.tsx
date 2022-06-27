@@ -61,7 +61,7 @@ const Home: NextPage = () => {
       <Container>
         {selectedApez ? (
           <div className='my-8'>
-            <p className='block text-3xl sm:text-4xl leading-none font-extrabold tracking-tight mb-10 text-white'>Generate your DaApez Badge !</p>
+            <p className='block text-3xl sm:text-4xl leading-none font-extrabold tracking-tight mb-10 text-white'>Generate your <span className='text-yellow-500'>DaApez</span> Badge !</p>
             <div className="grid grid-cols-1">
               <div className="col-span-1">
                 <div className="my-2">
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
                         onChange={(e) => setSelectedApezId(e.target.value)}
                       ></input>
                       <button
-                        className="px-2 py-1 rounded-r bg-yellow-400 text-white"
+                        className="px-2 py-1 rounded-r bg-yellow-500 text-white"
                         type="submit"
                       >
                         {loading ? "Loading..." : "OK"}
