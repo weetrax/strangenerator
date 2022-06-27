@@ -54,7 +54,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Strangers - Strangenerator</title>
-        <meta name="description" content="DaApez Badge Generator" />
+        <meta name="description" content="Strangers Badge Generator" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
