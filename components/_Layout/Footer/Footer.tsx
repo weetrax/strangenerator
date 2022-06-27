@@ -1,7 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import Container from "../Container";
-import SVGElrond from "../SVGIcons/SVGElrond";
 
 type FooterProps = {
   //
@@ -28,9 +27,7 @@ const Footer: React.FC<FooterProps> = () => {
             </p>
           </li>
           <li className="flex items-center justify-center">
-            <span className="mr-1">
-              <SVGElrond />
-            </span>{" "}
+            <img className="pr-1" width={25} height={25} src="/assets/img/egld-logo.svg" />
             Donation:
             <a
               href="https://explorer.elrond.com/accounts/erd1l9gr2fn7qy86q26xqj4wmner5evkz8q277nerckd8xy5502klzjs5mxcfr"

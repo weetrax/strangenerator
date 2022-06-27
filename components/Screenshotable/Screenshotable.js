@@ -34,9 +34,7 @@ const Screenshot = ({ children }) => {
           Download as .png
         </button>
       </div>
-      <div className="bg-yellow-400 rounded" ref={ref}>
-        {children}
-      </div>
+      <div ref={ref}>{children}</div>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { EditorProvider } from "../../providers/EditorProvider";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
@@ -9,7 +10,9 @@ const _Layout: React.FC<_LayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen bg-black font-body">
       <Navbar />
-      <main className="flex-1">{children}</main>
+      <EditorProvider>
+        <main className="flex-1">{children}</main>
+      </EditorProvider>
       <Footer />
     </div>
   );
