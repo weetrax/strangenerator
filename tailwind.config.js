@@ -12,17 +12,19 @@ module.exports = {
       gray: colors.neutral,
       indigo: colors.indigo,
       red: colors.rose,
+
       yellow: {
-        100: "#ffe9d7",
-        200: "#ffd3af",
-        300: "#ffbc86",
-        400: "#ffa65e",
-        500: "#ff9036",
-        600: "#cc732b",
-        700: "#995620",
-        800: "#663a16",
-        900: "#331d0b",
+        100: "#fbd0d8",
+        200: "#f8a1b1",
+        300: "#f4728b",
+        400: "#f14364",
+        500: "#ed143d",
+        600: "#be1031",
+        700: "#8e0c25",
+        800: "#5f0818",
+        900: "#2f040c",
       },
+
       green: colors.green,
       //CUSTOM COLORS
       //https://www.tailwindshades.com/
@@ -41,7 +43,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      body: ["Kalam"],
+      body: ["Montserrat"],
     },
     extend: {},
   },

@@ -8,7 +8,7 @@ type EditorProviderProps = {
 export const EditorProvider: React.FC<EditorProviderProps> = ({ children }) => {
 
     const [backgroundColor, setBackgroundColor] = useState<string>("#161721")
-    const [primaryColor, setPrimaryColor] = useState<string>("#ff9036")
+    const [primaryColor, setPrimaryColor] = useState<string>("#ed143d")
     const [secondaryColor, setSecondaryColor] = useState<string>("#ffffff")
 
 

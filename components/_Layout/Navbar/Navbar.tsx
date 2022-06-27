@@ -11,7 +11,7 @@ type NavbarProps = {
   //
 };
 
-const navigation = [{ name: "DaApezator", href: "/" }];
+const navigation = [{ name: "Strangenerator", href: "/" }];
 
 const Navbar: React.FC<NavbarProps> = () => {
   const router = useRouter();
@@ -40,12 +40,12 @@ const Navbar: React.FC<NavbarProps> = () => {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
-                    src="/assets/img/EyesLogo.png"
+                    src="/assets/img/stranger.png"
                     alt="Workflow"
                   />
                   <img
                     className="hidden lg:block h-8 w-auto"
-                    src="/assets/img/EyesLogo.png"
+                    src="/assets/img/stranger.png"
                     alt="Workflow"
                   />
                 </div>

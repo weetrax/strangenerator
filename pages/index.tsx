@@ -44,7 +44,7 @@ const Home: NextPage = () => {
     fetchDaApez();
   }, []);
 
-  const handleSubmitApez = (e: React.FormEvent) => {
+  const handleSubmitStrangers = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     fetchDaApez();
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>DaApez - DaApezator</title>
+        <title>Strangers - Strangenerator</title>
         <meta name="description" content="DaApez Badge Generator" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -61,17 +61,19 @@ const Home: NextPage = () => {
       <Container>
         {selectedApez ? (
           <div className='my-8'>
-            <p className='block text-3xl sm:text-4xl leading-none font-extrabold tracking-tight mb-10 text-white'>Generate your <span className='text-yellow-500'>DaApez</span> Badge !</p>
+            <p className='block text-3xl sm:text-4xl leading-none font-extrabold tracking-tight mb-10 text-white'>Generate your <span className='text-yellow-500'>Strangers</span> Badge !</p>
             <div className="grid grid-cols-1">
               <div className="col-span-1">
                 <div className="my-2">
                   <div className="flex flex-col items-start gap-4">
-                    <form onSubmit={handleSubmitApez}>
+                    <form onSubmit={handleSubmitStrangers}>
                       <label className="block text-white">Search by Id</label>
                       <input
-                        className="px-2 py-1 rounded-l outline-none"
+                        className="px-2 py-1 rounded-l outline-none disabled:bg-gray-300"
                         type={"text"}
                         value={selectedApezId}
+                        readOnly
+                        disabled
                         onChange={(e) => setSelectedApezId(e.target.value)}
                       ></input>
                       <button

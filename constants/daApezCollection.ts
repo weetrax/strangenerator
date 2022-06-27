@@ -1,4 +1,4 @@
-export const daApezCollection = {
+export const strangersCollection = {
   collection: "DAPEZ-c88658",
   type: "NonFungibleESDT",
   name: "DaApez",

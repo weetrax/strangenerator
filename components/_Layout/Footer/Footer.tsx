@@ -14,14 +14,14 @@ const Footer: React.FC<FooterProps> = () => {
           <li>
             <p>
               &copy; {new Date().getFullYear()}{" "}
-              <span className="font-bold">DaApezator </span> - A{" "}
+              <span className="font-bold">Strangenerator </span> - A{" "}
               <a
-                href="https://daapez.xyz/"
+                href="http://thestrangersnft.club/"
                 target={"_blank"}
                 rel="noreferrer"
                 className="hover:text-yellow-500 duration-200 transition-colors ease-in-out"
               >
-                DaApez
+                Strangers
               </a>{" "}
               Community App
             </p>
