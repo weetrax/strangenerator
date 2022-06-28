@@ -83,7 +83,7 @@ const Home: NextPage = () => {
                         {loading ? "Loading..." : "OK"}
                       </button>
                     </form>
-                    <div className="flex gap-2">
+                    <div className="flex flex-wrap gap-y-2 gap-x-6">
                       <div>
                         <label className="block text-white">Background color</label>
                         <input type={"color"} className="rounded" value={backgroundColor} onChange={(e) => setBackgroundColor(e.target.value)} />
