@@ -18,7 +18,7 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
 
-  const id = "GUARDIAN-3d6635";
+  const id = "STRA-f777be";
 
   const [collection, setCollection] = useState<Collection | null>(null);
   const [nft, setNft] = useState<NFT | null>(null);

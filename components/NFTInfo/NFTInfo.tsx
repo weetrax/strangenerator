@@ -57,7 +57,7 @@ const NFTInfo: React.FC<NFTInfoProps> = ({ nft }) => {
         </div>
         <div className="flex flex-col md:flex-row h-full items-center">
           <div className="" style={{ minWidth: "384px" }}>
-            <img className="rounded-l md:max-h-96" src={/*nft.url*/ "/assets/img/police-0x54.png"}></img>
+            <img className="rounded-l md:max-h-96" src={nft.url}></img>
           </div>
           <div className="text-center py-2 px-2 md:py-0 md:text-left w-full erd-info">
             <p className="mb-3">
@@ -71,7 +71,7 @@ const NFTInfo: React.FC<NFTInfoProps> = ({ nft }) => {
                 className="text-lg font-bold"
                 style={{ color: secondaryColor }}
               >
-                {/*nft.name*/}TBA
+                {nft.name}
               </span>
             </p>
             <p className="mb-3">
@@ -85,7 +85,7 @@ const NFTInfo: React.FC<NFTInfoProps> = ({ nft }) => {
                 className="text-lg font-bold"
                 style={{ color: secondaryColor }}
               >
-                {/*nft.identifier*/}TBA
+                {nft.identifier}
               </span>
             </p>
             <p className="mb-3 truncate">
@@ -102,7 +102,7 @@ const NFTInfo: React.FC<NFTInfoProps> = ({ nft }) => {
                 className="text-lg font-bold block truncate"
                 style={{ color: secondaryColor }}
               >
-                {/*nft.owner*/}TBA
+                {nft.owner}
               </a>
             </p>
             <p className="mb-3">
@@ -133,7 +133,7 @@ const NFTInfo: React.FC<NFTInfoProps> = ({ nft }) => {
                 className="text-lg font-bold"
                 style={{ color: secondaryColor }}
               >
-                {/*nft.collection*/}TBA
+                {nft.collection}
               </span>
             </p>
             <div className="w-28 h-28 block md:hidden mx-auto">
