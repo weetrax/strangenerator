@@ -1,7 +1,6 @@
-import React, { Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Disclosure } from "@headlessui/react";
 import classNames from "classnames";
 import Container from "../Container";
 import Link from "next/link";
@@ -25,17 +24,6 @@ const Navbar: React.FC<NavbarProps> = () => {
         <>
           <Container>
             <div className="relative flex items-center justify-between h-16">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-700">
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
-              </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
@@ -56,8 +44,8 @@ const Navbar: React.FC<NavbarProps> = () => {
                         <a
                           className={classNames(
                             router.pathname == item.href
-                              ? "bg-primary-500 text-white"
-                              : "text-gray-700 hover:bg-primary-500 hover:text-white duration-200 ease-in-out transition",
+                              ? "bg-primary-500"
+                              : "hover:bg-primary-500 duration-200 ease-in-out transition",
                             "px-3 py-2 rounded-md text-sm font-medium"
                           )}
                           aria-current={
@@ -73,30 +61,6 @@ const Navbar: React.FC<NavbarProps> = () => {
               </div>
             </div>
           </Container>
-
-          <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
-                <Disclosure.Button key={item.name} as="div">
-                  <Link href={item.href} key={item.name}>
-                    <a
-                      className={classNames(
-                        router.pathname == item.href
-                          ? "bg-primary-500 text-white"
-                          : "hover:bg-primary-500 hover:text-white text-gray-700",
-                        "block px-3 py-2 rounded-md text-base font-medium duration-200 ease-in-out transition"
-                      )}
-                      aria-current={
-                        router.pathname == item.href ? "page" : undefined
-                      }
-                    >
-                      {item.name}
-                    </a>
-                  </Link>
-                </Disclosure.Button>
-              ))}
-            </div>
-          </Disclosure.Panel>
         </>
       )}
     </Disclosure>

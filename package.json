@@ -23,6 +23,7 @@
   "dependencies": {
     "@headlessui/react": "^1.6.5",
     "@heroicons/react": "^1.0.6",
+    "axios": "^0.27.2",
     "classnames": "^2.3.1",
     "create-react-component-folder": "^0.3.7",
     "html-to-image": "^1.9.0",
@@ -30,6 +31,7 @@
     "next": "12.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.53.0",
     "use-react-screenshot": "^3.0.0"
   },
   "devDependencies": {

@@ -1,47 +1,52 @@
 import React, { createRef, useState } from "react";
-import PropTypes from "prop-types";
-import { useScreenshot, createFileName } from "use-react-screenshot";
 import * as htmlToImage from "html-to-image";
 
 const Screenshot = ({ children }) => {
   const [isDownloading, setIsDownloading] = useState(false);
 
-  const [image] = useScreenshot({
-    type: "image/png",
-    quality: 1.0,
-  });
   const ref = createRef(null);
-
-  const download = (
-    image,
-    { name = "strangers-badge", extension = "png" } = {}
-  ) => {
-    const a = document.createElement("a");
-    a.href = image;
-    a.download = createFileName(extension, name);
-    a.click();
-  };
 
   const downloadScreenshot = () => {
     setIsDownloading(true);
-    takeScreenShot(ref.current)
-      .then(download)
+    htmlToImage
+      .toPng(ref.current)
+      .then((dataUrl) => {
+        saveAs(dataUrl, "strangers-badge.png");
+      })
       .finally(() => {
         setIsDownloading(false);
       });
   };
 
-  const takeScreenShot = async (node) => {
-    const dataURI = await htmlToImage.toJpeg(node);
-    return dataURI;
+  const saveAs = (blob, fileName) => {
+    var elem = window.document.createElement("a");
+    elem.href = blob;
+    elem.download = fileName;
+    elem.style = "display:none;";
+    (document.body || document.documentElement).appendChild(elem);
+    if (typeof elem.click === "function") {
+      elem.click();
+    } else {
+      elem.target = "_blank";
+      elem.dispatchEvent(
+        new MouseEvent("click", {
+          view: window,
+          bubbles: true,
+          cancelable: true,
+        })
+      );
+    }
+    URL.revokeObjectURL(elem.href);
+    elem.remove();
   };
 
   return (
     <div>
-      <div className="text-right mb-4">
+      <div className="text-right my-4">
         <button
           onClick={downloadScreenshot}
-          className="px-2 py-1 rounded bg-yellow-500 text-white"
+          className="px-2 py-1 rounded bg-yellow-500 disabled:bg-yellow-300"
+          disabled={isDownloading}
         >
           {isDownloading ? "Downloading..." : "Download as .png"}
         </button>
