@@ -104,12 +104,12 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Badgetor - Collections</title>
+        <title>Strangers NFT Badge Generator</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
         <div className="py-8">
-          <p className='block text-3xl sm:text-4xl leading-none font-extrabold tracking-tight mb-10 text-white'>Generate your <span className='text-yellow-500'>Strangers</span> NFT Badge !</p>
+          <h1 className='block text-3xl sm:text-4xl leading-none font-extrabold tracking-tight mb-10 text-white'>Generate your <span className='text-yellow-500'>Strangers</span> NFT Badge !</h1>
           {collectionError ? (
             <p>{collectionError}</p>
           ) : (
